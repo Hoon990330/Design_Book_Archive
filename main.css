@@ -1,0 +1,324 @@
+html {
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+.title {
+    font-family: "Inter", serif;
+    font-weight: bold;
+    font-size: 50px;
+    margin-top: -30px;
+    line-height: 50px;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+}
+.info {
+    font-family: "Inter", serif;
+    font-size: 30px;
+    margin-top: -93px;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    pointer-events: auto; 
+
+}
+
+.categories {
+    margin-top: 0px;
+    padding: 20px;
+}
+
+.category {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 110px;
+    box-shadow: 0px 7px 0px black;
+    position: relative;
+    overflow: hidden;
+}
+
+.category:first-child {
+    border-top: 7px solid black;
+}
+
+.light-text {
+    font-family: "Inter", Italic;
+    font-weight: lighter;
+    font-size: 110px;
+}
+.bold-text {
+    font-family: "Inter", serif;
+    font-weight: medium;
+    text-transform: uppercase;
+}
+.low {
+    text-transform: lowercase;
+}
+
+
+ /* images  */
+.irma_1 {
+    width: 200px;
+    height: auto;
+    vertical-align: middle;
+    margin: 0 10px;
+}
+.irma_2 {
+    width: 180px;
+    height: auto;
+    vertical-align: middle;
+}
+
+.jan_1 {
+    width: 100px;
+    height: auto;
+    vertical-align: middle;
+    margin: 0 0px;
+}
+.jan_2 {
+    width: 180px;
+    height: 120px;
+    vertical-align: middle;
+    margin: 0 10px;
+}
+
+.vignelli_1 {
+    width: 80px;
+    height: auto;
+    vertical-align: middle;
+    margin: 0 10px;
+}
+.vignelli_2 {
+    width: 180px;
+    height: auto;
+    vertical-align: middle;
+    margin: 0 10px;
+}
+.crouwel_1 {
+    width: 130px;
+    height: auto;
+    vertical-align: middle;
+    margin: 0 0px;
+}
+.crouwel_2 {
+    width: 200px;
+    height: auto;
+    vertical-align: middle;
+    margin: 0 0px;
+}
+.carson_1 {
+    width: 100px;
+    height: auto;
+    vertical-align: middle;
+    margin: 0 0px;
+}
+.carson_2 {
+    width: 150px;
+    height: auto;
+    vertical-align: middle;
+    margin: 0 0px;
+} 
+.sagmeister_1 {
+    width: 110px;
+    height: auto;
+    vertical-align: middle;
+    margin: 0 0px;
+}
+.sagmeister_2 {
+    width: 80px;
+    height: auto;
+    vertical-align: middle;
+    margin: 0 0px;
+}
+.rand_1 {
+    width: 110px;
+    height: auto;
+    vertical-align: middle;
+    margin: 0 0px;
+}
+.rand_2 {
+    width: 180px;
+    height: auto;
+    vertical-align: middle;
+    margin: 0 0px;
+}
+.munari_1 {
+    width: 75px;
+    height: auto;
+    vertical-align: middle;
+    margin: 0 0px;
+}
+.munari_2 {
+    width: 150px;
+    height: auto;
+    vertical-align: middle;
+    margin: 0 0px;
+}
+.martens_1 {
+    width: 170px;
+    height: auto;
+    vertical-align: middle;
+    margin: 0 10px;
+}
+.martens_2 {
+    width: 150px;
+    height: auto;
+    vertical-align: middle;
+    margin: 0 0px;
+}
+ /* images  */
+
+
+ 
+.flow-animation {
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100%;
+    position: relative;
+    padding: 10px 0px;
+}
+.marquee-inner {
+    display: flex;
+    gap: 50px;
+    width: max-content;
+    animation: marqueeScroll 15s linear infinite;
+}
+.marquee-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-shrink: 0;
+    width: max-content;
+}
+
+.marquee-irma {
+    animation: marqueeScroll 30s linear infinite;
+}
+.marquee-jan {
+    animation: marqueeScroll 15s linear infinite;
+}
+.marquee-vignelli {
+    animation: marqueeScroll 10s linear infinite;
+}
+.marquee-crouwel {
+    animation: marqueeScroll 28s linear infinite;
+}
+.marquee-carson {
+    animation: marqueeScroll 15s linear infinite;
+}
+.marquee-sagmeister {
+    animation: marqueeScroll 8s linear infinite;
+}
+.marquee-rand {
+    animation: marqueeScroll 20s linear infinite;
+}
+.marquee-munari {
+    animation: marqueeScroll 15s linear infinite;
+}
+.marquee-martens {
+    animation: marqueeScroll 8s linear infinite;
+}
+
+@keyframes marqueeScroll {
+    from {
+        transform: translateX(0%);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+
+.category-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+.modal {
+    visibility: hidden; 
+    opacity: 0;
+
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+.modal-content {
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    max-width: 600px;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+}
+
+body, .category {
+    transition: background-color 0.4s ease-in-out, 
+                color 0.4s ease-in-out;
+}
+
+@media screen and (max-width: 1024px) {
+    .categories {
+        margin-top: 0px;
+        padding: 20px;
+    }
+    
+    .category {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 90px;
+        box-shadow: 0px 6px 0px black;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .category:first-child {
+        border-top: 6px solid black;
+    }
+    
+    .light-text {
+        font-family: "Inter", Italic;
+        font-weight: lighter;
+        font-size: 90px;
+    }
+    .bold-text {
+        font-family: "Inter", serif;
+        font-weight: medium;
+        text-transform: uppercase;
+    }
+    .low {
+        text-transform: lowercase;
+    }
+   
+}
+
+
+
+
+
+
+
+

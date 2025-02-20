@@ -46,36 +46,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-document.addEventListener("DOMContentLoaded", function () {
-    const infoButton = document.querySelector(".info");
-    const infoModal = document.getElementById("infoModal");
-
-    // ✅ 모달을 처음부터 숨김 (display를 변경하지 않고 visibility와 opacity로 조절)
-    infoModal.style.visibility = "hidden";
-    infoModal.style.opacity = "0";
-
-    if (!infoButton) {
-        console.error("INFO 버튼을 찾을 수 없습니다!");
-        return;
-    }
-
-    // ✅ INFO 버튼 클릭하면 모달 보이기
-    infoButton.addEventListener("click", function () {
-        console.log("INFO 버튼 클릭됨!");
-        infoModal.style.visibility = "visible";
-        infoModal.style.opacity = "1";
-    });
-
-    // ✅ 모달 바깥쪽 클릭하면 닫기
-    window.addEventListener("click", function (event) {
-        if (event.target === infoModal) {
-            infoModal.style.opacity = "0";
-            setTimeout(() => {
-                infoModal.style.visibility = "hidden";
-            }, 300); // transition 시간과 맞춤
-        }
-    });
-});
 
 document.addEventListener("DOMContentLoaded", function () {
     const categories = document.querySelectorAll(".category");
@@ -113,6 +83,32 @@ document.addEventListener("DOMContentLoaded", function () {
             body.style.backgroundColor = ""; // ✅ 원래 배경색 복귀
             category.style.color = ""; // ✅ 원래 글자색 복귀
         });
+    });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    const modal = document.getElementById("infoModal");
+    const infoButton = document.querySelector(".info");
+    const closeButton = document.querySelector(".close-btn");
+
+    // INFO 버튼 클릭 시 모달 열기
+    infoButton.addEventListener("click", function () {
+        modal.style.visibility = "visible";
+        modal.style.opacity = "1";
+    });
+
+    // X 버튼 클릭 시 모달 닫기
+    closeButton.addEventListener("click", function () {
+        modal.style.visibility = "hidden";
+        modal.style.opacity = "0";
+    });
+
+    // 모달 바깥 클릭 시 닫기
+    window.addEventListener("click", function (event) {
+        if (event.target === modal) {
+            modal.style.visibility = "hidden";
+            modal.style.opacity = "0";
+        }
     });
 });
 

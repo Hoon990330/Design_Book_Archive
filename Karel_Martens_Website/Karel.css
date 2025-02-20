@@ -386,6 +386,34 @@ p {
     font-size: 18px;
 }
 
+.close-btn {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 30px;
+    font-weight: medium;
+    cursor: pointer;
+    color: black;
+    background: none;
+    border: none;
+    outline: none;
+    z-index: 1001; /* ✅ 모달보다 위로 */
+}
+
+/* ✅ 모달 자체의 z-index 높이기 */
+.modal {
+    z-index: 1000; /* 모달 배경 */
+}
+
+
+.modal-content {
+    position: relative;
+    z-index: 1001; /* ✅ X 버튼이 보이도록 */
+}
+
+.close-btn {
+    display: block !important; /* ✅ 강제로 보이게 */
+}
 
 body {
     transition: background-color 0.4s ease-in-out, 

@@ -430,7 +430,7 @@ body {
         font-weight: lighter;
         margin: 70px 0 0 20px; 
         padding-left: 0px;
-      
+        letter-spacing: 0px;
     }
 
 
@@ -503,31 +503,6 @@ body {
         justify-content: space-between;
         align-items: center;
         gap: 200px; 
-    }
-
-    .categories {
-        margin-top: 0px;
-        padding: 20px;
-    }
-    
-    .category {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 90px;
-        border-bottom: 6px solid black;
-        position: relative;
-        overflow: hidden;
-    }
-    
-    .category:first-child {
-        border-top: 6px solid black;
-    }
-    
-    .light-text {
-        font-family: "Inter", Italic;
-        font-weight: lighter;
-        font-size: 90px;
     }
 
 }
@@ -688,4 +663,213 @@ body {
         font-size: 18px;
     }
    
+}
+
+@media screen and (max-width: 390px) {
+    .header {
+        display: flex;
+        align-items: center;
+        padding: 0 20px;
+    }
+
+    .title {
+        font-family: "Inter", serif;
+        font-weight: bold;
+        font-size: 33px;
+        margin-top: 20px;
+        
+        line-height: 50px;
+        text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+    }
+    .info {
+        font-family: "Inter", serif;
+        font-size: 20px;
+        margin-top: -35px;
+        text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+        cursor: pointer;
+        pointer-events: auto; 
+    
+    }
+
+    .book-title {
+        font-family: "Inter", sans-serif;
+        font-size: 2rem; 
+        font-weight: lighter;
+        margin: 70px 0 0 20px; 
+        padding-left: 0px;
+      
+    }
+    
+    .book-info {
+        display: flex;
+        flex-direction: column; 
+        align-items: flex-start; 
+        gap: 10px; 
+    }
+
+  
+    .book-description {
+        width: 90%;
+        text-align: left; 
+        font-size: 1rem; 
+    }
+
+    .book-meta {
+        width: 100%;
+        text-align: left; 
+        font-size: 0.9rem;
+        margin-top: 20px; 
+        margin-left:20px;
+    }
+
+    .categories {
+        margin-top: 0px;
+        padding: 20px;
+    }
+    
+    .category {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 60px;
+        box-shadow: 0px 6px 0px black;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .category:first-child {
+        border-top: 6px solid black;
+    }
+    
+    .light-text {
+        font-family: "Inter", Italic;
+        font-weight: lighter;
+        font-size: 60px;
+    }
+    .bold-text {
+        font-family: "Inter", serif;
+        font-weight: medium;
+        text-transform: uppercase;
+    }
+    .low {
+        text-transform: lowercase;
+    }
+
+    
+
+  
+
+     /* images  */
+.irma_1 {
+    width: 100px;
+    height: auto;
+    vertical-align: middle;
+    margin: 0 0px;
+}
+.irma_2 {
+    width: 90px;
+    height: auto;
+    vertical-align: middle;
+}
+
+.jan_1 {
+    width: 50px;
+    height: auto;
+    vertical-align: middle;
+    margin: 0 0px;
+}
+.jan_2 {
+    width: 90px;
+    height: 60px;
+    vertical-align: middle;
+    margin: 0 0px;
+}
+
+.vignelli_1 {
+    width: 40px;
+    height: auto;
+    vertical-align: middle;
+    margin: 0 0px;
+}
+.vignelli_2 {
+    width: 90px;
+    height: auto;
+    vertical-align: middle;
+    margin: 0 0px;
+}
+.crouwel_1 {
+    width: 65px;
+    height: auto;
+    vertical-align: middle;
+    margin: 0 0px;
+}
+.crouwel_2 {
+    width: 100px;
+    height: auto;
+    vertical-align: middle;
+    margin: 0 0px;
+}
+.carson_1 {
+    width: 50px;
+    height: auto;
+    vertical-align: middle;
+    margin: 0 0px;
+}
+.carson_2 {
+    width: 75px;
+    height: auto;
+    vertical-align: middle;
+    margin: 0 0px;
+} 
+.sagmeister_1 {
+    width: 55px;
+    height: auto;
+    vertical-align: middle;
+    margin: 0 0px;
+}
+.sagmeister_2 {
+    width: 40px;
+    height: auto;
+    vertical-align: middle;
+    margin: 0 0px;
+}
+.rand_1 {
+    width: 55px;
+    height: auto;
+    vertical-align: middle;
+    margin: 0 0px;
+}
+.rand_2 {
+    width: 90px;
+    height: auto;
+    vertical-align: middle;
+    margin: 0 0px;
+}
+.munari_1 {
+    width: 37.5px;
+    height: auto;
+    vertical-align: middle;
+    margin: 0 0px;
+}
+.munari_2 {
+    width: 75px;
+    height: auto;
+    vertical-align: middle;
+    margin: 0 0px;
+}
+.martens_1 {
+    width: 85px;
+    height: auto;
+    vertical-align: middle;
+    margin: 0 0px;
+}
+.martens_2 {
+    width: 75px;
+    height: auto;
+    vertical-align: middle;
+    margin: 0 0px;
+}
+ /* images  */
+    
+
 }

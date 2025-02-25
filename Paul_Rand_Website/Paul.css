@@ -506,6 +506,39 @@ body {
         gap: 200px; 
     }
 
+    .categories {
+        margin-top: 0px;
+        padding: 20px;
+    }
+    
+    .category {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 90px;
+        box-shadow: 0px 6px 0px black;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .category:first-child {
+        border-top: 6px solid black;
+    }
+    
+    .light-text {
+        font-family: "Inter", Italic;
+        font-weight: lighter;
+        font-size: 90px;
+    }
+    .bold-text {
+        font-family: "Inter", serif;
+        font-weight: medium;
+        text-transform: uppercase;
+    }
+    .low {
+        text-transform: lowercase;
+    }
+
 }
 
 @media screen and (max-width: 800px) {
